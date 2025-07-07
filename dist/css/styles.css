@@ -2,3 +2,8 @@
 @import "effects.css";
 @import "component.css";
 @import "globals.css";
+@import "mobilenavcss.css";
+
+body {
+    background-color: forestgreen;
+}

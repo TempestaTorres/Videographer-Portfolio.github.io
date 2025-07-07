@@ -14,15 +14,13 @@
 
 :root {
     --font-primary: 'Montserrat';
-    --font-size-primary: 1,2rem;
+    --font-size-primary: 1.2rem;
     --line-height-primary: 1.8;
     --font-marker: 'PermanentMarker';
     --color-primary: #fff;
     --color-rose: #E3242B;
     --color-focus: #076cab;
-    --color-nav-link-hover: #34665C;
     --color-blue: #57a898;
-    --color-light: #f1f2f4;
     --color-border: #57a898;
     --color-hover: #57a898;
     --button-background-color: #E3242B;
@@ -55,6 +53,9 @@ label, .h2, .h3, .comment, .link-text, .button {
 }
 .comment {
     font-size: 1.3rem;
+}
+.bg-header {
+    background-color: var(--header-background-color);
 }
 .footer-text {
     font-size: 0.9rem;
