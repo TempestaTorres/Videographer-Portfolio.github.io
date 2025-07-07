@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: 'PermanentMarker';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/PermanentMarker-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+:root {
+    --font-primary: 'Montserrat';
+    --font-size-primary: 1,2rem;
+    --line-height-primary: 1.8;
+    --font-marker: 'PermanentMarker';
+    --color-primary: #fff;
+    --color-rose: #E3242B;
+    --color-focus: #076cab;
+    --color-nav-link-hover: #34665C;
+    --color-blue: #57a898;
+    --color-light: #f1f2f4;
+    --color-border: #57a898;
+    --color-hover: #57a898;
+    --button-background-color: #E3242B;
+    --header-background-color: #57a898;
+    --border: 1px solid var(--color-border);
+}
+
+body {
+    font-family: var(--font-primary), sans-serif;
+    font-size: var(--font-size-primary);
+    line-height: var(--line-height-primary);
+    color: var(--color-primary);
+}
+
+.h1 {
+    font-size: calc(1rem + 6vw);
+    line-height: 1.1;
+}
+.h1-subtitle {
+    font-size: calc(1rem + 3vw);
+}
+.h2 {
+    font-size: 2rem;
+}
+label, .h2, .h3, .comment, .link-text, .button {
+    font-weight: 500;
+}
+.link-text {
+    text-transform: uppercase;
+}
+.comment {
+    font-size: 1.3rem;
+}
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.button {
+    padding: 0.8rem 2rem 0.75rem;
+    background-color: var(--button-background-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+.button:hover {
+    background-color: var(--color-hover);
+}
