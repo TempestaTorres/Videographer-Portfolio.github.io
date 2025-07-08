@@ -27,7 +27,10 @@
     box-shadow: var(--c-card-shadow);
 }
 
-
+.parallax-container {
+    min-height: 380px;
+    height: auto;
+}
 /* 1024 - 1199 */
 @media screen and (max-width: 1199px) {
 

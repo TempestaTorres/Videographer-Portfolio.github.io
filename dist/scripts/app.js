@@ -1,14 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("load", (e) => {
+
     "use strict";
 
-    const nav = document.querySelector(".nav");
-
-    function scrollObserver(scrollPos) {
-
-        navObserver.call(nav, scrollPos);
-    }
     // Entry Point
-    addScrollListener(scrollObserver);
-    mobileNav.call(nav);
-
+    parallax();
+    mobileNav();
+    effectsInit();
 });

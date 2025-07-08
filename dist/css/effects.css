@@ -57,6 +57,15 @@
 }
 /*Text effects*/
 
+/* Example:
+<h2 class="h2 has-bottom-line-effect has-fadein-to-right-effect-buddy" data-duration-start="0.5s" data-duration-step="0.2s"><span
+                            class="has-fadein-to-right-effect">P</span><span class="has-fadein-to-right-effect">o</span><span
+                            class="has-fadein-to-right-effect">r</span><span class="has-fadein-to-right-effect">t</span><span
+                            class="has-fadein-to-right-effect">f</span><span class="has-fadein-to-right-effect">o</span><span
+                            class="has-fadein-to-right-effect">l</span><span class="has-fadein-to-right-effect">i</span><span
+                            class="has-fadein-to-right-effect">o</span></h2>
+
+*/
 .has-bottom-line-effect {
     display: inline-block;
     position: relative;
@@ -78,7 +87,7 @@
     transform: scaleX(1);
 }
 /* Text fade-in-to-right apply to span */
-.has-fadein-to-right-effect-buddy.is-active .has-fadein-to-right-effect {
+.has-fadein-to-right-effect-buddy.is-visible .has-fadein-to-right-effect {
     opacity: 1;
     left: 0;
 }
