@@ -10,10 +10,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
+
 hr {
     box-sizing: content-box;
     height: 0;
@@ -104,7 +101,7 @@ svg {
 img,
 video {
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 img {
     object-fit: cover;

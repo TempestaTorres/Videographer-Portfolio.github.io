@@ -1,8 +1,8 @@
 function mobileNav() {
     "use strict";
 
-    const nav = document.querySelector(".nav");
     const burger = document.querySelector("#burger");
+    const nav= this;
 
     burger.addEventListener("click", function(e) {
 
@@ -14,8 +14,14 @@ function mobileNav() {
 
         e.stopPropagation();
     });
+}
+function navObserver(scrollPosition) {
+    "use strict";
 
-
-
-
+    if (scrollPosition > 250 && !this.classList.contains('has-background')) {
+        this.classList.add('has-background');
+    }
+    else if (scrollPosition < 250 && this.classList.contains('has-background')) {
+        this.classList.remove('has-background');
+    }
 }

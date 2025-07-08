@@ -4,6 +4,64 @@
 @import "globals.css";
 @import "mobilenavcss.css";
 
-body {
-    background-color: forestgreen;
+:root {
+    --c-max-width: 1325px;
+}
+#video {
+    position: absolute;
+    object-fit: cover;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-container {
+    top: 18%;
+}
+.has-fadein-to-right-effect {
+    font-family: var(--font-marker), cursive;
+}
+.portfolio-grid-item {
+    background-color: #fff;
+    box-shadow: var(--c-card-shadow);
+}
+
+
+/* 1024 - 1199 */
+@media screen and (max-width: 1199px) {
+
+    .portfolio-grid {
+        gap: 1rem;
+    }
+    .line-length-ssm {
+        max-width: 25ch;
+    }
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+
+    .line-length-ssm {
+        max-width: 22ch;
+    }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+
+    .line-length-ssm {
+        max-width: 90%;
+    }
+}
+/* 320-374 */
+@media screen and (max-width: 374px) {
+
+
 }

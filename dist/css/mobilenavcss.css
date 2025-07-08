@@ -82,13 +82,11 @@ header {
 }
 
 @media not all and (hover: none) {
-    .nav.has-background li a:not(.svg):hover {
-        background-color: var(--nav-link-color-hover-primary);
-    }
-}
-@media not all and (hover: none) {
     .nav li a:not(.svg):hover {
         background-color: var(--nav-link-color-hover-mobile);
+    }
+    .nav.has-background li a:not(.svg):hover {
+        background-color: var(--nav-link-color-hover-primary);
     }
 }
 @media not all and (hover: none) {
@@ -105,9 +103,12 @@ header {
         overflow: hidden;
         opacity: 1;
         background-color: transparent;
+        transition: all 0.5s linear;
     }
     .nav.has-background {
-        background-color: var(--nav-bg-primary);
+        background-color: rgba(87, 168, 152, 0.9);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 0 2px 0 #dddddddd;
     }
     /*ul*/
     .mobile-list {
