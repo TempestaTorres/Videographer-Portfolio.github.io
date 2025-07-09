@@ -19,6 +19,7 @@ function parallaxesInit() {
     'use strict';
 
     this.forEach(parallax => {
+
         parallax.firstElementChild.style.opacity = '1';
         parallax.firstElementChild.addEventListener("load", handleImageLoad.call(parallax));
     });
@@ -42,6 +43,7 @@ function handleWindowResize() {
 function handleImageLoad() {
 
     'use strict';
+
     updateParallax.call(this);
 }
 function updateParallax() {
