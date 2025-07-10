@@ -31,10 +31,39 @@
     min-height: 380px;
     height: auto;
 }
+.skills-list {
+    display: inline-block;
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+.skills-list li::marker {
+    color: var(--color-blue);
+}
+
+.quote-open {
+    padding-right: 0.313rem;
+}
+.quote-close {
+    padding-left: 0.313rem;
+}
+.background-container {
+    background-image: url("../assets/img/bawpyramid.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+#contact {
+    padding-bottom: 190px;
+    background-image: linear-gradient(180deg, #f2dfcf, #060402);
+}
+/*Footer*/
+footer {
+    padding: 10.625rem 0 2rem 0;
+}
 /* 1024 - 1199 */
 @media screen and (max-width: 1199px) {
 
-    .portfolio-grid {
+    .portfolio-grid, .about-grid, .testimonials-grid {
         gap: 1rem;
     }
     .line-length-ssm {
@@ -46,6 +75,18 @@
 
     .line-length-ssm {
         max-width: 22ch;
+    }
+    #portfolio {
+        margin-top: -2.5rem;
+    }
+    .parallax-container {
+        min-height: 180px;
+    }
+    .about-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-container {
+        width: 100%;
     }
 }
 /* 425 - 767 */

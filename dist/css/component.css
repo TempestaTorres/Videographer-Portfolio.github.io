@@ -42,6 +42,7 @@
     --c-black-on-scheme-l: 4%;
     --c-black-on-scheme: hsla(var(--c-black-h), var(--c-black-s), var(--c-black-on-scheme-l), 1);
     --c-footer-padding: 3rem 0;
+    --c-frame-padding: 1rem;
 }
 small {
     font-size: var(--c-small-font-size);
@@ -96,6 +97,7 @@ input:invalid:required, textarea:invalid:required {
 .app-header, .app-footer {
     flex-shrink: 0;
 }
+/*Footer*/
 .footer {
     padding: var(--c-footer-padding);
 }
@@ -112,32 +114,7 @@ input:invalid:required, textarea:invalid:required {
     background-color: hsl(var(--footer-h), var(--footer-s), var(--footer-background-l));
     color: hsl(var(--footer-h), var(--footer-s), var(--footer-color-l));
 }
-.valign-container {
-    display: flex;
-    align-items: center;
-}
-.loader {
-    animation: spinAround 500ms infinite linear;
-    border: 2px solid var(--c-border);
-    border-radius: var(--c-radius-rounded);
-    border-right-color: transparent;
-    border-top-color: transparent;
-    content: "";
-    display: block;
-    height: 1em;
-    position: relative;
-    width: 1em;
-}
-.img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    color: transparent;
-}
+/*Hero*/
 .hero {
     --hero-body-padding: 3rem 1.5rem;
     --hero-body-padding-tablet: 3rem 3rem;
@@ -218,11 +195,45 @@ input:invalid:required, textarea:invalid:required {
 .parallax-container .parallax img {
     opacity: 0;
     position: absolute;
-    left: 50%;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
-    transform: translateX(-50%);
+    transform: translate3d(0, 0, 0);
+}
+.valign-container {
+    display: flex;
+    align-items: center;
+}
+.loader {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1em;
+    width: 1em;
+    border: 2px solid var(--c-border);
+    border-radius: var(--c-radius-rounded);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: spinAround 500ms infinite linear;
+}
+.absolute-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.frame {
+    padding: var(--c-frame-padding);
+}
+/*Card*/
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-box-shadow {
+    box-shadow: var(--c-box-shadow);
 }
 .line-length-md {
     max-width: 50ch;
@@ -343,6 +354,9 @@ input:invalid:required, textarea:invalid:required {
 .has-hover-danger-svg:hover svg * {
     fill: hsl(348, 100%, 61%);
 }
+.has-hover-success-svg:hover svg * {
+    fill: hsl(141, 71%, 48%);
+}
 .min-h-screen {
     min-height: 100vh;
 }
@@ -362,6 +376,9 @@ input:invalid:required, textarea:invalid:required {
     inset: 0;
 }
 /* Components */
+.inline-block {
+    display: inline-block;
+}
 .d-none {
     display: none;
 }
@@ -685,10 +702,19 @@ input:invalid:required, textarea:invalid:required {
     margin-bottom: 6.75rem;
 }
 /*Margin Top-Bottom*/
+.my-8 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 .my-32 {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.my-50 {
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
 /* Gaps */
 .gap-8 {
     gap: .5rem;
@@ -1141,15 +1167,15 @@ input:invalid:required, textarea:invalid:required {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
 }
-.py-10 {
+.py-40 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
-.py-11 {
+.py-44 {
     padding-top: 2.75rem;
     padding-bottom: 2.75rem;
 }
-.py-12 {
+.py-48 {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -1159,7 +1185,7 @@ input:invalid:required, textarea:invalid:required {
     padding-bottom: 3.125rem;
 }
 
-.py-13 {
+.py-52 {
     padding-top: 3.25rem;
     padding-bottom: 3.25rem;
 }
@@ -1183,7 +1209,7 @@ input:invalid:required, textarea:invalid:required {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
-.py-25 {
+.py-100 {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
 }
@@ -1201,11 +1227,11 @@ input:invalid:required, textarea:invalid:required {
     padding-left: .25rem;
     padding-right: .25rem;
 }
-.px-2 {
+.px-8 {
     padding-left: .5rem;
     padding-right: .5rem;
 }
-.px-3 {
+.px-12 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
@@ -1218,23 +1244,23 @@ input:invalid:required, textarea:invalid:required {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
-.px-6 {
+.px-24 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
-.px-7 {
+.px-28 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
 }
-.px-8 {
+.px-32 {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.px-9 {
+.px-36 {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
 }
-.px-9-x {
+.px-38 {
     padding-left: 2.375rem;
     padding-right: 2.375rem;
 }
@@ -1243,15 +1269,15 @@ input:invalid:required, textarea:invalid:required {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
-.px-11 {
+.px-44 {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
 }
-.px-12 {
+.px-48 {
     padding-left: 3rem;
     padding-right: 3rem;
 }
-.px-13 {
+.px-52 {
     padding-left: 3.25rem;
     padding-right: 3.25rem;
 }
@@ -1379,6 +1405,10 @@ input:invalid:required, textarea:invalid:required {
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-duration: .5s;
 }
+.transition-fill {
+    transition-property: fill;
+    transition: .3s linear;
+}
 .translate-0 {
     transform: translate3d(0, 0, 0);
 }
@@ -1426,13 +1456,14 @@ input:invalid:required, textarea:invalid:required {
 .box-shadow:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px -5px, rgba(0, 0, 0, 0.1) 0 8px 10px -6px;
 }
-.blur-3xl {
+
+.blur-45 {
     filter: blur(45px);
 }
-.blur-100 {
+.blur-200 {
     filter: blur(200px);
 }
-.backdrop-blur-md {
+.backdrop-blur-12 {
     backdrop-filter: blur(12px);
 }
 .sr-only {

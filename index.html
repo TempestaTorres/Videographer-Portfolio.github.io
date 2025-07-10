@@ -9,6 +9,7 @@
     <script src="./dist/scripts/effects.js"></script>
     <script src="./dist/scripts/mobilenavjs.js"></script>
     <script src="./dist/scripts/component.js"></script>
+    <script src="./dist/scripts/form.validate.js"></script>
     <script src="./dist/scripts/app.js"></script>
 </head>
 <body>
@@ -54,10 +55,11 @@
     </div>
     <main>
         <!--Portfolio-->
-        <section id="portfolio" class="pt-40">
+        <section id="portfolio" class="py-40">
             <div class="container">
                 <div class="portfolio-title mt-24">
-                    <h2 class="h2 has-bottom-line-effect has-fadein-to-right-effect-buddy" data-duration-start="0.5s" data-duration-step="0.2s"><span
+                    <h2 class="h2 has-bottom-line-effect has-fadein-to-right-effect-buddy" data-duration-start="0.5s"
+                        data-duration-step="0.1s"><span
                             class="has-fadein-to-right-effect">P</span><span class="has-fadein-to-right-effect">o</span><span
                             class="has-fadein-to-right-effect">r</span><span class="has-fadein-to-right-effect">t</span><span
                             class="has-fadein-to-right-effect">f</span><span class="has-fadein-to-right-effect">o</span><span
@@ -73,11 +75,12 @@
                 <div class="portfolio-grid grid grid-cols-2 gap-48 mt-32 mb-16">
                     <!--Column 1-->
                     <div class="portfolio-grid-item">
-                        <video src="./dist/assets/img/video.mp4" poster="./dist/assets/img/cover.png" preload="none"
+                        <video src="./dist/assets/img/video.mp4" poster="./dist/assets/img/Cayo-Sombrero.cover.png"
+                               preload="none"
                                controls=""></video>
                         <!--Card-->
                         <div class="portfolio-card pt-8 pb-16 flex-column-container gap-12by8">
-                            <p class="label">Project Name</p>
+                            <p class="label-title">Project Name</p>
                             <p class="brand">brand</p>
                             <p class="line-length-ssm leading-none text-center">Spaces that invite you to pause – to
                                 feel, taste, stay. Where comfort meets the wild</p>
@@ -85,11 +88,11 @@
                     </div>
                     <!--Column 2-->
                     <div class="portfolio-grid-item">
-                        <video src="./dist/assets/img/city.mp4" poster="./dist/assets/img/cover.png" preload="none"
+                        <video src="./dist/assets/img/city.mp4" poster="./dist/assets/img/cover2.png" preload="none"
                                controls=""></video>
                         <!--Card-->
                         <div class="portfolio-card pt-8 pb-16 flex-column-container gap-12by8">
-                            <p class="label">Project Name</p>
+                            <p class="label-title">Project Name</p>
                             <p class="brand">brand</p>
                             <p class="line-length-ssm leading-none text-center">Each place teaches us something – about
                                 wonder, simplicity, and how it feels to be part of something bigger</p>
@@ -97,11 +100,11 @@
                     </div>
                     <!--Column 3-->
                     <div class="portfolio-grid-item">
-                        <video src="./dist/assets/img/woman.mp4" poster="./dist/assets/img/cover.png" preload="none"
+                        <video src="./dist/assets/img/woman.mp4" poster="./dist/assets/img/cover3.png" preload="none"
                                controls=""></video>
                         <!--Card-->
                         <div class="portfolio-card pt-8 pb-16 flex-column-container gap-12by8">
-                            <p class="label">Project Name</p>
+                            <p class="label-title">Project Name</p>
                             <p class="brand">brand</p>
                             <p class="line-length-ssm leading-none text-center">When a stay becomes a memory – not
                                 because of where, but how it felt</p>
@@ -109,11 +112,11 @@
                     </div>
                     <!--Column 4-->
                     <div class="portfolio-grid-item">
-                        <video src="./dist/assets/img/ocean.mp4" poster="./dist/assets/img/cover.png" preload="none"
+                        <video src="./dist/assets/img/ocean.mp4" poster="./dist/assets/img/cover4.png" preload="none"
                                controls=""></video>
                         <!--Card-->
                         <div class="portfolio-card pt-8 pb-16 flex-column-container gap-12by8">
-                            <p class="label">Project Name</p>
+                            <p class="label-title">Project Name</p>
                             <p class="brand">brand</p>
                             <p class="line-length-ssm leading-none text-center">Light on skin. Salt in the air. The
                                 small luxuries of being present</p>
@@ -125,48 +128,293 @@
         <!--Parallax-->
         <div class="parallax-container">
             <div class="parallax">
-                <img src="./dist/assets/img/background1.jpg" alt="background boat">
+                <img src="./dist/assets/img/Bhutan.jpg" alt="bhutan" loading="lazy">
             </div>
         </div>
-        <section id="about">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata</p>
+        <!--About-->
+        <section id="about" class="py-40">
+            <div class="container">
+                <div class="about-title mt-24">
+                    <h2 class="h2 has-bottom-line-effect has-fadein-to-right-effect-buddy" data-duration-start="0.5s"
+                        data-duration-step="0.1s"><span
+                            class="has-fadein-to-right-effect">A</span><span class="has-fadein-to-right-effect">b</span><span
+                            class="has-fadein-to-right-effect">o</span><span class="has-fadein-to-right-effect">u</span><span
+                            class="has-fadein-to-right-effect">t</span><span
+                            class="has-fadein-to-right-effect">&nbsp;</span><span
+                            class="has-fadein-to-right-effect">J</span><span class="has-fadein-to-right-effect">a</span><span
+                            class="has-fadein-to-right-effect">m</span><span class="has-fadein-to-right-effect">e</span><span
+                            class="has-fadein-to-right-effect">s</span></h2>
+                </div>
+                <!--About Grid-->
+                <div class="about-grid grid grid-cols-2 gap-48">
+                    <!--Column 1-->
+                    <div>
+                        <h3 class="h3">Experience</h3>
+                        <p class="paragraph">
+                            James is an <a class="base-link" href="#">CAA</a> and <a class="base-link" href="#">FAA</a>
+                            certified videographer <strong>with over 10 years of experience in his field</strong>.
+                        </p>
+                        <p class="paragraph">
+                            He has worked with many brands to create promotional videos and commercials centered around
+                            nature and adventure.
+                        </p>
+                        <!--Author Image-->
+                        <div class="author-img transform-border my-50">
+                            <img src="./dist/assets/img/author.jpeg" alt="James" loading="lazy">
+                        </div>
+                        <h3 class="h3">Education</h3>
+                        <p class="paragraph">
+                            A bachelor's degree in photography, and visual arts. He can provide a
+                            comprehensive understanding of photography concepts, techniques, and equipment.
+                        </p>
+                    </div>
+                    <!--Column 2-->
+                    <div>
+                        <h3 class="h3">Skills</h3>
+                        <p class="paragraph">Some of his skills include, but are not limited to:</p>
+                        <ul class="skills-list">
+                            <li>Manage time efficiently and <strong>deliver content by deadline</strong></li>
+                            <li>Work harmoniously with Creative director or collaborative team</li>
+                            <li>Know what type of equipment to use for your individual project</li>
+                            <li>Shooting <strong>high quality video footage</strong> both indoors and outdoors</li>
+                            <li><strong>Aerial videography</strong>: licensed drone operator</li>
+                            <li>Setting up equipment, troubleshooting problems and making necessary repairs so projects
+                                can go forward even in more desolate locations
+                            </li>
+                            <li>Good communication skills and the ability to interview people</li>
+                            <li>Flexibility and highly adaptive to different situations</li>
+                            <li>Patience to wait for the perfect shot</li>
+                        </ul>
+                        <!--Brands-->
+                        <p class="paragraph">Some of the brands that have benefited from his work are:</p>
+                        <div class="brands-img mt-50 transform-border">
+                            <img src="./dist/assets/img/Travel-Photography.jpg" alt="brands image" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="testimonials"></section>
-        <section id="contact"></section>
+        <!--Parallax-->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="./dist/assets/img/Victoria-Falls-Zimbabwe-Side-1-of-1.jpg" alt="victoria falls"
+                     loading="lazy">
+            </div>
+        </div>
+        <!--Testimonials-->
+        <section id="testimonials" class="py-40">
+            <div class="container">
+                <div class="testimonials-title mt-24">
+                    <h2 class="h2 has-bottom-line-effect has-fadein-to-right-effect-buddy" data-duration-start="0.5s"
+                        data-duration-step="0.1s"><span
+                            class="has-fadein-to-right-effect">T</span><span class="has-fadein-to-right-effect">e</span><span
+                            class="has-fadein-to-right-effect">s</span><span class="has-fadein-to-right-effect">i</span><span
+                            class="has-fadein-to-right-effect">m</span><span
+                            class="has-fadein-to-right-effect">o</span><span
+                            class="has-fadein-to-right-effect">n</span><span class="has-fadein-to-right-effect">i</span><span
+                            class="has-fadein-to-right-effect">a</span><span class="has-fadein-to-right-effect">l</span><span
+                            class="has-fadein-to-right-effect">s</span></h2>
+                </div>
+                <!--Card Grid-->
+                <div class="testimonials-grid grid grid-cols-2 gap-48 mt-24">
+                    <!--Card-->
+                    <div class="frame has-background-light effect-from-bottom card-box-shadow rounded-md">
+                        <div class="card-body gap-20">
+                            <div class="card-text">
+                                <p>
+                                    <svg class="quote-open inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path fill="#57a898"
+                                              d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                    </svg>
+                                    I employed James for a project recently and I was very impressed by his
+                                    professionalism: he cares very much about creating high quality content and delivers
+                                    what he promises.
+                                    <svg class="quote-close inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path fill="#57a898"
+                                              d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="card-signature">
+                                <p class="comment"><span>- </span>Isabella Norton</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card-->
+                    <div class="frame has-background-light effect-from-bottom card-box-shadow rounded-md">
+                        <div class="card-body gap-20">
+                            <div class="card-text">
+                                <p>
+                                    <svg class="quote-open inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path fill="#57a898"
+                                              d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                    </svg>
+                                    James has helped us launch 3 different products over the past years. The quality of
+                                    his work is very high and his creative vision always adds to the project. He always
+                                    delivers content on time and is a reliable person to work with. I definitely
+                                    recommend him.
+                                    <svg class="quote-close inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path fill="#57a898"
+                                              d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="card-signature">
+                                <p class="comment"><span>- </span>Nicky Petersen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card-->
+                    <div class="frame has-background-light effect-from-bottom card-box-shadow rounded-md">
+                        <div class="card-body gap-20">
+                            <div class="card-text">
+                                <p>
+                                    <svg class="quote-open inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path fill="#57a898"
+                                              d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                    </svg>
+                                    James is a very dedicated videographer, who works hard and smart to create content
+                                    that is profitable for your brand. I couldn't help but be impressed with his work
+                                    ethic and skill.
+                                    <svg class="quote-close inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path fill="#57a898"
+                                              d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="card-signature">
+                                <p class="comment"><span>- </span>Lloyd Smith</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card-->
+                    <div class="frame has-background-light effect-from-bottom card-box-shadow rounded-md">
+                        <div class="card-body gap-20">
+                            <div class="card-text">
+                                <p>
+                                    <svg class="quote-open inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path fill="#57a898"
+                                              d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                    </svg>
+                                    James was a pleasure to work with. He delivered the videos we asked for on time and
+                                    on budget. I will definitely hire him for our next project again.
+                                    <svg class="quote-close inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path fill="#57a898"
+                                              d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="card-signature">
+                                <p class="comment"><span>- </span>Austin Pratt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Parallax-->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="./dist/assets/img/Cayo-Sombrero.jpg" alt="guyana" loading="lazy">
+            </div>
+        </div>
+        <!--Contact-->
+        <section id="contact" class="pt-40">
+            <div class="background-container">
+                <div class="container">
+                    <div class="contact-title mt-24">
+                        <h2 class="h2 has-bottom-line-effect has-fadein-to-right-effect-buddy" data-duration-start="0.5s"
+                            data-duration-step="0.1s"><span
+                                class="has-fadein-to-right-effect">C</span><span class="has-fadein-to-right-effect">o</span><span
+                                class="has-fadein-to-right-effect">n</span><span class="has-fadein-to-right-effect">t</span><span
+                                class="has-fadein-to-right-effect">a</span><span
+                                class="has-fadein-to-right-effect">c</span><span
+                                class="has-fadein-to-right-effect">t</span></h2>
+                        <p class="paragraph">
+                            Do you have a project you need video for? <strong>Call now</strong> on
+                            <a class="base-link" href="tel:01023456789">010 2345 6789</a> <strong>or send an email</strong>
+                            by filling out the below contact form to discuss how James can be part of it.
+                        </p>
+                    </div>
+                    <div class="contact-container w-half py-26">
+                        <div class="effect-from-bottom">
+                            <form id="form" novalidate>
+                                <label class="label" for="name">Your Name:</label>
+                                <input class="w-full border rounded-md p-4 has-background-white-ter" type="text" name="name" id="name" minlength="2" required>
+                                <p class="msg-danger"></p>
+
+                                <label class="label" for="email">Your Email:</label>
+                                <input class="w-full border rounded-md p-4 has-background-white-ter" type="email" name="email" id="email" minlength="6" required>
+                                <p class="msg-danger"></p>
+
+                                <label class="label" for="subject">Subject:</label>
+                                <input class="w-full border rounded-md p-4 has-background-white-ter" type="text" name="subject" id="subject" minlength="10" required>
+                                <p class="msg-danger"></p>
+
+                                <label class="label" for="message">Message:</label>
+                                <textarea class="w-full border rounded-md p-4 resize-none has-background-white-ter" name="message" id="message" cols="30" rows="10" minlength="30" required></textarea>
+                                <p class="msg-danger"></p>
+
+                                <div class="form-footer pb-8 flex-row-container">
+                                    <button class="button" type="submit" data-name="Sending...">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h4 class="h4">I’m excited to meet you!</h4>
+        <!--Parallax-->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="./dist/assets/img/Amed-Mt-Agung-2-of-3.jpg" alt="guyana" loading="lazy">
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="has-background-black">
+        <div class="container">
+            <div class="content footer-text">
+                <p>This website is a portfolio page and does not offer actual travel videography services.</p>
+                <p>Created by: <a class="inline-block base-link" href="#">Mad Jun</a></p>
+                <div class="footer-social mt-12 valign-container gap-16">
+                    <a class="has-hover-success-svg" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="transition-fill" fill="#FFFFFF" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/>
+                        </svg>
+                    </a>
+                    <a class="has-hover-success-svg" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="transition-fill" fill="#FFFFFF" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+                        </svg>
+                    </a>
+                    <a class="has-hover-success-svg" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="transition-fill" fill="#FFFFFF" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
+                        </svg>
+                    </a>
+                    <a class="has-hover-success-svg" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="transition-fill" d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" fill="#FFFFFF"/>
+                        </svg>
+                    </a>
+                    <a class="has-hover-success-svg" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="transition-fill" fill="#FFFFFF" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

@@ -4,23 +4,28 @@ function effectsInit() {
 
     const bottomLines = document.querySelectorAll('.has-bottom-line-effect');
     const fadeinToRight = document.querySelectorAll('.has-fadein-to-right-effect-buddy');
+    const fromBottom = document.querySelectorAll('.effect-from-bottom');
 
     function effectsHandler(posY) {
 
         if (bottomLines.length > 0) {
 
-            bottomLinesHandler.call(bottomLines);
+            baseEffectHandler.call(bottomLines);
         }
         if (fadeinToRight.length > 0) {
 
             fadeinToRightHandler.call(fadeinToRight);
+        }
+        if (fromBottom.length > 0) {
+
+            baseEffectHandler.call(fromBottom);
         }
 
     }
     addScrollListener(effectsHandler);
 }
 
-function bottomLinesHandler() {
+function baseEffectHandler() {
     'use strict';
 
     for (let i = 0; i < this.length; i++) {

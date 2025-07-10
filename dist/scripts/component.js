@@ -63,7 +63,7 @@ function updateParallax() {
 
     if (bottom > scrollTop && top < scrollTop + windowHeight) {
 
-        this.firstElementChild.style.transform = "translate3D(-50%, " + parallax + "px, 0)";
+        this.firstElementChild.style.transform = "translate3D(0, " + parallax + "px, 0)";
     }
 }
 function getTopOffset() {

@@ -25,11 +25,12 @@
     --color-rose: #E3242B;
     --color-focus: #076cab;
     --color-blue: #57a898;
+    --color-deep-blue: #34665C;
     --color-border: #57a898;
     --color-hover: #57a898;
     --button-background-color: #E3242B;
-    --header-background-color: #57a898;
     --border: 1px solid var(--color-border);
+    --shadow-base: 0 10px 20px rgba(255,255,255,0.6);
 }
 
 body {
@@ -39,8 +40,12 @@ body {
     color: var(--color-primary);
     background-color: var(--color-light);
 }
+input:valid:required, textarea:valid:required {
+    border: var(--border);
+}
 section {
     color: #000;
+    background-image: linear-gradient(180deg, #ffffff, #f2dfcf);
 }
 .h1 {
     font-family: var(--font-bold), sans-serif;
@@ -56,17 +61,27 @@ section {
 .h2 {
     font-size: 2rem;
 }
-.h2, .h3, .comment, .link-text, .button {
+.h2, .link-text, .button {
     font-weight: 500;
 }
-.label {
+.h3, .h4, .comment {
+    font-weight: 600;
+}
+.h4 {
+    text-align: center;
+    margin-top: -6.875rem;
+}
+.comment {
+    font-size: 1.3rem;
+}
+.label-title {
     font-weight: 700;
     border-bottom: 2px solid var(--color-border);
 }
 .link-text {
     text-transform: uppercase;
 }
-.paragraph {
+.paragraph, .h3 {
     margin: 0.8rem 0;
 }
 .brand {
@@ -76,12 +91,10 @@ section {
 .comment {
     font-size: 1.3rem;
 }
-.bg-header {
-    background-color: var(--header-background-color);
-}
 .footer-text {
     font-size: 0.9rem;
     line-height: 1.5;
+    text-align: center;
 }
 .button {
     padding: 0.8rem 2rem 0.75rem;
@@ -89,7 +102,23 @@ section {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
+    color: #ffffff;
+    border-radius: 30px;
 }
 .button:hover {
     background-color: var(--color-hover);
+}
+.button[type="submit"] {
+    box-shadow: var(--shadow-base);
+}
+.base-link {
+    display: inline-block;
+    color: var(--color-deep-blue);
+    border-bottom: 1px solid var(--color-deep-blue);
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+.base-link:hover {
+    color: var(--color-blue);
+    border-bottom: 1px solid var(--color-blue);
 }
